@@ -2,7 +2,8 @@
 import { useContext, useEffect} from 'react'
 import { CountdownContainer, Separator } from './styles'
 import { differenceInSeconds } from 'date-fns'
-import { CyclesContext } from '../../Home'
+import { CyclesContext } from '../../../../contexts/CyclesContext'
+
 
 export const Countdown = () => {
   const {activeCycle, activedCycleId, markCurrentCycleAsFinished, amountSecondPassed, setSecondsPassed} = useContext(CyclesContext)
