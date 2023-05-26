@@ -70,9 +70,9 @@ export function CyclesContextProvider({children}: CyclesContextProviderProps){
     setCycles(state => state.map((cycle) => {
       if(cycle.id === activedCycleId) {
         return {...cycle, interruptedDate: new Date()}
+      } else {
+        return cycle
       }
-
-      return cycle
     }))
     setActivedCycleId(null)
   }
