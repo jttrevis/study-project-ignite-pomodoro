@@ -18,8 +18,8 @@ export const Home = () => {
   const {activeCycle , createNewCycle, interruptCurrentCycle} = useContext(CyclesContext)
 
   const newCycleFormValidationSchema = zod.object({
-    task: zod.string().min(1, 'Please enter a task'),
-    minutesAmount: zod.number().min(1).max(60)
+    task: zod.string().min(5, 'Please enter a task'),
+    minutesAmount: zod.number().min(5).max(60)
   })
 
   const newCycleForm = useForm<NewCycleFormData>({

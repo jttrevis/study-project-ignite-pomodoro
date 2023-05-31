@@ -30,7 +30,7 @@ export const NewCycleForm = () => {
     </datalist>
 
     <label htmlFor="minutesAmount">how long</label>
-    <MinutesAmountInput placeholder="00" disabled={!!activeCycle} step={5} min={1} max={60} id="minutesAmount" type="number"
+    <MinutesAmountInput placeholder="00" disabled={!!activeCycle} step={5} min={5} max={60} id="minutesAmount" type="number"
     {...register('minutesAmount', {valueAsNumber: true})}
     
     />
